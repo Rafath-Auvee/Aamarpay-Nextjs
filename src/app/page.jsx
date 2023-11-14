@@ -66,8 +66,8 @@ const CardDetails = ({ data }) => {
 
 export default function Home() {
   const cardData = {
-    userName: "rafath auvee",
-    userPhone: "01764951051",
+    userName: "Rafath Auvee",
+    userPhone: "051051",
     createdAt: "14:11:2023 19:24:50 PM",
     cardCode: "ES-24",
     orderID: "1699968290538-1285",
