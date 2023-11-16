@@ -6,6 +6,7 @@ export const POST = async (request) => {
   try {
     // Parse the request body
     // console.log("First");
+    // tran_id: uuid(),
     const reqBody = await request.json();
 
     // console.log("Second");
@@ -19,13 +20,14 @@ export const POST = async (request) => {
       store_id: "aamarpaytest",
       currency: "BDT",
       desc: reqBody.description,
+      orderID: "12341-123123-3242",
       cus_add1: reqBody.useraddress,
       cus_add2: "Dhaka",
       cus_city: "Dhaka",
       cus_country: "Bangladesh",
-      success_url: "http://localhost:3000/api/aamarpay/callback",
-      fail_url: "http://localhost:3000/api/aamarpay/callback",
-      cancel_url: "http://localhost:3000/api/aamarpay/callback",
+      success_url: "http://localhost:3900/callback",
+      fail_url: "http://localhost:3900/callback",
+      cancel_url: "http://localhost:3900/callback",
       type: "json", //This is must required for JSON request
     };
 

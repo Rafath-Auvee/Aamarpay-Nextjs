@@ -1,7 +1,7 @@
 import React from "react";
 
 const PaymentStatus = () => {
-  return <div>Success</div>;
+  return <div>Cancel</div>;
 };
 
 export default PaymentStatus;

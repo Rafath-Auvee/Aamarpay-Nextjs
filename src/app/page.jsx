@@ -46,6 +46,9 @@ const CardDetails = ({ data }) => {
         <strong>Email:</strong> {data.userEmail}
       </p>
       <p>
+        <strong>Order ID:</strong> {data.orderID}
+      </p>
+      <p>
         <strong>Description:</strong> {data.description}
       </p>
       <p>
@@ -84,6 +87,7 @@ export default function Home() {
     description:
       "The card captures the essence of serene harmony between two families coming together. With soothing colors and a tranquil design, it symbolizes the peaceful union of hearts.",
     useraddress: "53, Gausul Azam Road, Sector-14, Dhaka, Bangladesh",
+    orderID: "12341-123123-3242",
   };
 
   return (
